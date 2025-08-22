@@ -846,4 +846,135 @@ footer{background:#000;color:#fff;position:relative;overflow:hidden}
   }
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  /* --- NAV --- */
+  .site-nav{
+    position: fixed;
+    top: 0.75em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    width: min(92vw, 380px);
+    gap: 1em;
+    padding: 0.5em 0.9em;
+    border-radius: 1.25em;
+  }
+  .nav-links{
+    display: flex;
+    gap: 0.25em;
+  }
+  .nav-links a{
+    padding: 0.35em 0.9em;
+    font-size: 1rem;
+  }
+  .contact{
+    display: block;
+  }
+  .nav-toggle{            /* keep hamburger hidden on tablet */
+    display: none;
+  }
+  .sidebar{               /* ensure off by default for tablet */
+    display: none !important;
+  }
+
+  /* --- HERO --- */
+  #container{
+    width: 92vw;
+  }
+  #text1, #text2{
+    font-size: clamp(3.5rem, 7vw, 6rem);
+    left: 0;
+  }
+  .hero-content p{
+    top: 2em;
+    margin: 1.5em;
+    font-size: clamp(1rem, 2.8vw, 1.75rem);
+  }
+  .hero-social-icons{
+    bottom: 2em;
+    gap: 1.2em;
+  }
+  #video-mobile{          /* tablet uses desktop bg video */
+    display: none !important;
+  }
+
+  /* --- ABOUT --- */
+  .about-section{
+    height: 70vh;
+    padding: 2em 1.25em;
+  }
+  .about-section h2{
+    letter-spacing: 6px;
+    font-size: clamp(1rem, 2.2vw, 1.4rem);
+    padding: 0 2em;
+    margin-left: 0;
+    text-align: center;
+  }
+  .about-section p{
+    font-size: clamp(1.4rem, 4vw, 2.25rem);
+    padding: 0 1.25em;
+  }
+  .about-image{
+    right: 3em;
+    bottom: 3em;
+    max-width: 38vw;
+    transform: translateY(0);   /* visible without hover dependency */
+    opacity: 1;
+  }
+  .mobile-image{           /* only for phones */
+    display: none !important;
+  }
+
+  /* --- WORKS --- */
+  .works-content h2{
+    letter-spacing: 18px;
+    font-size: clamp(4rem, 10vw, 7rem);
+    margin: 0.25em 0 0.5em;
+  }
+  .work-card{
+    width: 90vw;
+    min-height: 60vh;
+    gap: 4em;
+    padding: 2em 1.25em;
+  }
+  .work-card img{
+    width: 44%;
+  }
+  .work-card h3{
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+  }
+  .work-card a{
+    font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  }
+
+  /* --- FOOTER --- */
+  .footer-cta{
+    padding: 1.5em 0;
+    margin: 3em 0;
+  }
+  .cta-inner{
+    padding: 0 1em;
+    gap: 12px;
+  }
+  .cta-title{
+    font-size: clamp(1.75rem, 3.2vw, 3rem);
+  }
+  .cta-icon{
+    width: 72px; height: 72px;
+    scale: 1.5;
+  }
+  .footer-inner{
+    grid-template-columns: 1fr minmax(260px, 1.2fr) 1fr;
+    padding: 40px 20px 24px;
+  }
+  .brand{
+    font-size: clamp(56px, 12vw, 120px);
+  }
+  .social-list a{
+    font-size: clamp(20px, 3vw, 30px);
+  }
+}
+
+
 
